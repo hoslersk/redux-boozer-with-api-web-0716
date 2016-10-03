@@ -3,11 +3,12 @@ import {connect} from 'react-redux';
 import {Link} from 'react-router';
 function CocktailsIndex (props) {
   const renderCocktails = (cocktail) => {
-    return (<li key={cocktail.id}>
-      <Link to={`/cocktails/${cocktail.id}`}>
-        {cocktail.name}
-      </Link>
-    </li>)
+    return (
+      <li key={cocktail.id}>
+        <Link to={`/cocktails/${cocktail.id}`}>
+          {cocktail.name}
+        </Link>
+      </li>)
   }
 
   return (
